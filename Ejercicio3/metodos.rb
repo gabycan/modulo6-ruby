@@ -128,9 +128,47 @@ end
 
 #system ("clear")
 
-def
-    if monto%5 == 0 
-        saldo = saldo - monto - cobro
+def banco(monto, saldo)
+    cobro = 0,5
+    if monto <= saldo
+        if monto%5 == 0 
+            saldo = saldo - monto - cobro
+        end
     end
+return saldo
+puts saldo
+end
+
+
+def suma_interior (n)
+    resultado = 0
+    n.digits.each {
+        |i|
+        resultado += i
+    }
+
+return resultado
+end
+
+puts "-".center(20,"-")
+print suma_interior (1234)
+puts
+puts "-".center(20,"-")
+
+
+#capicua
+def capicua
+    system ("clear")
+    numero = ""
+    revez = ""
+        puts "ingrese un número"
+        numero =gets.to_s
+        revez = numero.reverse
+        if numero.to_i == revez.to_i
+            puts "#{revez} ¡es capicua!"
+        else
+            puts revez
+        end
+        gets
 end
 
