@@ -12,6 +12,7 @@ separados = cadena_numeros.split(" ")
 
 acumulador = 0
 separados.each { |numero_separado| #recorrer los números separados
+    #puts "valor: #{numero_separado}"
     acumulador += numero_separado.to_i
 }
     puts acumulador
