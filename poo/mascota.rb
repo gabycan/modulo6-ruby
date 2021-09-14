@@ -14,4 +14,8 @@ end
             puts "no, no estoy vacunado 🧸"
         end
     end
+
+    def to_s
+        
+    end
 end
